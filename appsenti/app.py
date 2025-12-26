@@ -200,9 +200,8 @@ st.subheader("Temas a analizar")
 queries_text = st.text_area(
     "Ingresa uno o varios temas (uno por línea)",
     value=(
-        "reforma fiscal OR impuestos) AND República Dominicana\n"
-        "economía dominicana\n"
-        "inflación RD"
+        "Escribir tema aquí"
+        "reforma fiscal OR impuestos AND República Dominicana\n"
     ),
     height=120
 )
@@ -341,3 +340,4 @@ if st.button("Analizar sentimiento"):
 
                     if r["vader"] != r["roberta"]:
                         st.warning("⚠️ Análisis divergente entre VADER y RoBERTa.")
+
